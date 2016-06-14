@@ -1,0 +1,101 @@
+,user,host,path,referer,code,agent,size,method,time
+0,,224.108.28.51,/category/toys,-,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,127,GET,1412362794
+1,,96.204.127.69,/category/electronics,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",80,GET,1412362781
+2,,176.219.145.188,/item/jewelry/3847,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0),56,GET,1412362768
+3,,88.30.173.66,/category/jewelry,/search/?c=Games+Software,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,84,GET,1412362755
+4,,56.117.159.163,/item/office/4429,/search/?c=Office+Books,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,72,GET,1412362741
+5,,220.180.229.92,/category/office,/category/cameras,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",53,GET,1412362728
+6,,168.180.177.180,/search/?c=Jewelry,/category/finance?from=20,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),83,POST,1412362715
+7,,76.150.50.172,/item/software/1877,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),122,GET,1412362702
+8,,132.141.126.103,/item/electronics/1937,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",101,GET,1412362689
+9,,20.81.220.95,/category/software,/item/software/1973,200,"Mozilla/5.0 (iPad; CPU OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3",118,GET,1412362676
+10,,136.87.214.163,/category/office,/category/books,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,130,GET,1412362663
+11,,112.96.173.162,/item/garden/4536,/category/finance,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,91,GET,1412362650
+12,,192.42.33.60,/category/software,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",105,GET,1412362636
+13,,68.42.70.44,/category/giftcards,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",139,GET,1412362623
+14,,116.93.228.92,/category/electronics,/category/office,200,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),71,GET,1412362610
+15,,72.156.35.101,/category/cameras,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0),76,GET,1412362597
+16,,216.45.112.61,/category/giftcards,-,200,"Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3",128,GET,1412362584
+17,,220.216.43.228,/item/computers/4496,/item/health/1189,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,89,GET,1412362571
+18,,212.147.134.150,/category/toys,/item/toys/197,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,104,GET,1412362558
+19,,84.189.125.83,/item/games/1661,/item/games/1593,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0),91,GET,1412362544
+20,,212.219.214.210,/category/games,/category/health,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,99,GET,1412362531
+21,,20.132.45.175,/item/software/2754,/category/sports,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),100,GET,1412362518
+22,,20.60.170.223,/search/?c=Giftcards,-,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",109,POST,1412362505
+23,,200.99.204.61,/category/cameras?from=0,/category/electronics,200,"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",67,GET,1412362492
+24,,136.75.140.114,/category/finance,/category/garden?from=10,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",138,GET,1412362479
+25,,136.33.123.201,/item/computers/1628,-,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,43,GET,1412362465
+26,,112.141.120.209,/item/health/973,-,200,"Mozilla/5.0 (iPad; CPU OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3",69,GET,1412362452
+27,,212.96.46.75,/item/electronics/4542,/category/finance,200,"Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3",117,GET,1412362439
+28,,196.42.122.226,/category/jewelry,/item/software/1324,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,109,GET,1412362426
+29,,24.177.217.65,/category/games,-,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),97,GET,1412362413
+30,,120.72.229.62,/category/games,/item/music/4630,200,"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",103,GET,1412362400
+31,,152.114.116.57,/category/finance,"http://www.google.com/search?ie=UTF-8&q=google&sclient=psy-ab&q=Finance+Software&oq=Finance+Software&aq=f&aqi=g-vL1&aql=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=2230&bih=83",200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),78,GET,1412362386
+32,,140.177.181.146,/item/electronics/1745,/category/software,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0),130,GET,1412362373
+33,,164.54.104.106,/category/electronics,/search/?c=Garden+Giftcards,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,116,GET,1412362360
+34,,40.147.179.226,/category/toys,/category/electronics,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",48,GET,1412362347
+35,,160.66.163.66,/item/games/249,/search/?c=Games+Software,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,118,GET,1412362334
+36,,116.84.126.133,/search/?c=Electronics,/item/toys/17,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; YTB730; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),60,POST,1412362321
+37,,76.87.220.171,/category/office,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",137,GET,1412362307
+38,,116.93.24.135,/item/electronics/4542,/category/finance,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,117,GET,1412362294
+39,,20.180.38.218,/category/networking,/category/games,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),99,GET,1412362281
+40,,124.81.191.79,/category/toys,-,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",121,GET,1412362268
+41,,44.81.126.202,/item/sports/4933,"http://www.google.com/search?ie=UTF-8&q=google&sclient=psy-ab&q=Sports&oq=Sports&aq=f&aqi=g-vL1&aql=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=1871&bih=307",200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),70,GET,1412362255
+42,,188.156.106.138,/category/jewelry?from=10,/category/jewelry,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",134,GET,1412362241
+43,,148.192.45.213,/category/electronics,/category/toys,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",130,GET,1412362228
+44,,208.57.34.192,/item/electronics/1429,/category/electronics,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,119,GET,1412362215
+45,,176.138.179.213,/category/electronics,/category/jewelry,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),125,GET,1412362202
+46,,132.90.51.146,/category/health,/category/finance?from=10,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,61,GET,1412362189
+47,,124.108.33.217,/item/games/1661,/category/books,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",91,GET,1412362175
+48,,40.201.62.53,/category/garden?from=10,/item/cameras/2617,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,78,GET,1412362162
+49,,180.126.136.65,/category/games,/category/electronics,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,132,GET,1412362149
+50,,32.36.169.158,/category/games,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),77,GET,1412362136
+51,,104.135.166.169,/item/electronics/2348,/category/electronics,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,114,GET,1412362123
+52,,108.210.49.106,/category/giftcards,-,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),90,GET,1412362109
+53,,48.39.86.129,/item/books/3764,/item/office/3249,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,72,GET,1412362096
+54,,44.108.78.194,/item/games/103,/category/software,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),109,GET,1412362083
+55,,84.54.108.203,/category/jewelry,-,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; EasyBits GO v1.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),81,GET,1412362070
+56,,96.153.40.77,/item/electronics/2132,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),104,GET,1412362057
+57,,164.54.104.106,/item/software/555,-,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),77,GET,1412362043
+58,,84.228.134.43,/category/jewelry?from=10,/search/?c=Cameras,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",134,GET,1412362030
+59,,184.114.184.227,/category/electronics,/category/software,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),133,GET,1412362017
+60,,48.39.86.129,/item/jewelry/3847,/item/electronics/1789,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,56,GET,1412362004
+61,,112.120.142.167,/category/electronics,/item/books/214,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0),119,GET,1412361990
+62,,188.117.130.90,/category/cameras,/search/?c=Garden+Giftcards,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",109,GET,1412361977
+63,,160.141.180.47,/category/software,-,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",98,GET,1412361964
+64,,60.60.79.26,/category/games,/item/jewelry/675,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,82,GET,1412361951
+65,,120.72.229.62,/category/giftcards,/category/electronics,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,116,GET,1412361938
+66,,112.174.194.137,/search/?c=Electronics+Games,-,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",86,POST,1412361924
+67,,148.90.137.42,/category/health,-,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,131,GET,1412361911
+68,,40.27.38.83,/category/office,/item/electronics/4588,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),68,GET,1412361898
+69,,52.21.69.53,/category/garden,/item/games/2605,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",56,GET,1412361885
+70,,92.36.202.227,/category/software?from=20,-,200,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),100,GET,1412361871
+71,,172.225.159.80,/search/?c=Office,/item/computers/2444,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0),102,POST,1412361858
+72,,172.75.186.56,/category/books?from=10,/category/books,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,127,GET,1412361845
+73,,128.141.57.79,/item/finance/4240,/search/?c=Finance,200,"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.46 Safari/535.11",65,GET,1412361832
+74,,160.51.196.215,/item/software/1071,-,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0),125,GET,1412361818
+75,,48.45.67.130,/item/networking/3044,/search/?c=Networking+Electronics,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),53,GET,1412361805
+76,,200.48.213.79,/item/jewelry/2302,-,200,"Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3",84,GET,1412361792
+77,,220.225.154.214,/item/computers/959,"http://www.google.com/search?ie=UTF-8&q=google&sclient=psy-ab&q=Computers&oq=Computers&aq=f&aqi=g-vL1&aql=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=332&bih=445",200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),124,GET,1412361779
+78,,152.165.176.67,/category/electronics,/search/?c=Music+Games,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; WOW64; Trident/4.0; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C),75,GET,1412361765
+79,,72.222.132.47,/item/books/4113,/category/books,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; BTRS122159; GTB7.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; BRI/2),73,GET,1412361752
+80,,124.27.104.213,/search/?c=Jewelry+Toys,/category/games,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET4.0C; .NET4.0E; Media Center PC 6.0),49,POST,1412361739
+81,,60.60.79.26,/category/electronics,/category/office,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",41,GET,1412361726
+82,,44.135.67.116,/search/?c=Sports,/search/?c=Giftcards,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,62,POST,1412361712
+83,,196.198.91.33,/category/electronics,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",75,GET,1412361699
+84,,172.33.129.134,/item/office/1279,-,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,94,GET,1412361686
+85,,136.30.199.48,/category/toys,"http://www.google.com/search?ie=UTF-8&q=google&sclient=psy-ab&q=Toys&oq=Toys&aq=f&aqi=g-vL1&aql=&pbx=1&bav=on.2,or.r_gc.r_pw.r_qf.,cf.osb&biw=362&bih=226",200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",44,GET,1412361673
+86,,112.156.123.174,/item/books/931,/search/?c=Books+Electronics,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; WOW64; Trident/4.0; GTB6; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30618; .NET4.0C),92,GET,1412361659
+87,,220.216.43.228,/category/networking?from=20,-,200,Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,137,GET,1412361646
+88,,84.201.36.130,/item/music/2217,/item/books/1375,200,Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0),73,GET,1412361633
+89,,68.24.111.119,/category/software,-,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",113,GET,1412361620
+90,,20.228.58.109,/category/garden,/item/electronics/1876,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; GTB7.2; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),86,GET,1412361606
+91,,188.156.130.21,/category/office,-,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,60,GET,1412361593
+92,,80.138.79.36,/category/electronics,/item/office/428,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,77,GET,1412361580
+93,,220.183.213.181,/search/?c=Jewelry,-,200,Mozilla/5.0 (Windows NT 6.0; rv:10.0.1) Gecko/20100101 Firefox/10.0.1,83,POST,1412361566
+94,,136.204.35.193,/category/electronics,/category/toys,200,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),115,GET,1412361553
+95,,216.45.112.61,/category/books,/item/toys/1268,200,Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; YTB730; GTB7.2; EasyBits GO v1.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C),52,GET,1412361540
+96,,148.57.210.99,/category/electronics,/item/toys/3068,200,Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),58,GET,1412361527
+97,,208.48.26.63,/category/electronics,/category/cameras,200,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7",71,GET,1412361513
+98,,84.135.216.159,/category/electronics,/category/music,200,Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0.1) Gecko/20100101 Firefox/9.0.1,55,GET,1412361500
+99,,164.219.72.68,/item/cameras/2043,/category/cameras,200,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",98,GET,1412361487

@@ -1,0 +1,8 @@
+{'max_time': '1412366395', 'limit': '100', 'col_list': '*', 'format': 'csv', 'table_name': 'www_access', 'db_name': 'sample_datasets', 'min_time': '1412366345', 'query_engine': 'presto'}
+SELECT * FROM www_access WHERE td_time_range(time,1412366345,1412366395) LIMIT 100;
+[2K<IPython.core.display.HTML object>
+Downloading results to 70558583.csv file
+{'db_name': 'sample_datasets', 'max_time': 'NULL', 'col_list': '*', 'format': 'tabular', 'limit': '0', 'query_engine': 'presto', 'table_name': 'www_access', 'min_time': 'NULL'}
+Executing...SELECT * FROM www_access ;
+[2K<IPython.core.display.HTML object>
+Downloading results to 70559739.txt file

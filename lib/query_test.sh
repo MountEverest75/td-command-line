@@ -1,0 +1,1 @@
+./query.py -f csv -e hive -c 'symbol,high,low' -m 1427347140 -M 1427350725 -l 10 -d 'sample_datasets' -t 'nasdaq'

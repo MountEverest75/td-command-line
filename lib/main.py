@@ -14,7 +14,7 @@ def run_dynamic_query(parameters):
     con = td.connect(apikey, endpoint)
     #1. Connect to the query engine
     con_engine=con.query_engine(database=parameters['db_name'], type=parameters['query_engine'])
-    if parameters['limit'] != '0':
+    if parameters['limit'] > 0:
         limit_str = "LIMIT " + str(parameters['limit']) + ";"
     else:
         limit_str = ";"
@@ -74,40 +74,35 @@ def main(argv):
 			db_name = arg
 		elif opt in ("-t", "--table_name"):
 			table_name = arg
+		parameters = {}
+		parameters['db_name'] = db_name
+		parameters['table_name'] = table_name
+		if engine == '':
+			parameters['query_engine'] = "presto"
+		else:
+			parameters['query_engine'] = engine
 			
-	parameters = {}
-	parameters['db_name'] = db_name
-	parameters['table_name'] = table_name
-	if engine == '':
-		parameters['query_engine'] = "presto"
-	else:
-		parameters['query_engine'] = engine
+		if columns == '':
+			parameters['col_list'] = "*"
+		else:
+			parameters['col_list'] = columns
+			
+		if format == 'csv':
+			parameters['format'] = 'csv'
+		else:
+			parameters['format'] = 'tabular'
 		
-	if columns == '':
-		parameters['col_list'] = "*"
-	else:
-		parameters['col_list'] = columns
+		if limit > 0:
+			parameters['limit'] = limit
+		else:
+			parameters['limit'] = 0
 		
-	if format == 'csv':
-		parameters['format'] = 'csv'
-	else:
-		parameters['format'] = 'tabular'
+		if min_time == '':
+			parameters['min_time'] = 'NULL'
 		
-	# if limit == '':
-	# 	parameters['limit'] = str(limit)
-	# else:
-	# 	parameters['limit'] = '0'
-	# if min_time == '':
-	# 	parameters['min_time'] = 'NULL'
-	# 
-	# if max_time == '':
-	# 	parameters['max_time'] = 'NULL'
-	parameters['limit'] = str(limit)
-	parameters['min_time'] = min_time
-	parameters['max_time'] = max_time
-	
-	print(parameters)
-	run_dynamic_query(parameters)
+		if max_time == '':
+			parameters['max_time'] = 'NULL'
+		run_dynamic_query(parameters)
 
 if __name__ == "__main__":
 	main(sys.argv[1:])

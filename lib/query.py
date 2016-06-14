@@ -5,6 +5,7 @@ import os
 import pandas as pd
 import pandas_td as td
 import tdclient
+from tabulate import tabulate
 
 #This function connects and executes query on Treasure Data
 def run_dynamic_query(parameters):

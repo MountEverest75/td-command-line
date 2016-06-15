@@ -1,4 +1,0 @@
-query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name
-Database Name and Table Name are mandatory
-Suggested usage: ./query.py -d <db_name> -t <table_name>
-Suggested usage with optionals: query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name

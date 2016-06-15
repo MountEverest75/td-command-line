@@ -23,3 +23,5 @@
 ./query.py -f 'csv' -e 'presto' -c '*' -m '1412366345' -M 'NULL' -l '100' -d 'sample_datasets' -t 'www_access' >> tdaudit.log
 ./query.py -f 'csv' -e 'presto' -c 'user,host,time' -m '1412366345' -M 'NULL' -l '100' -d 'sample_datasets' -t 'www_access' >> tdaudit.log
 
+# My own data set tests
+./query.py -d 'financial_datasets' -t 'fdic_failed_banklist' >> tdaudit.log

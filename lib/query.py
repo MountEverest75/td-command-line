@@ -34,13 +34,17 @@ def run_dynamic_query(parameters):
             
     print("Executing..." + compose_query)
     #4. Run query as a job and wait for job to finish
-    with tdclient.Client(apikey) as client:
-        job = client.query(parameters['db_name'],compose_query,type=parameters['query_engine'])
-        job.wait()
-		#Assign result set to a data frame
-        df = td.read_td_job(job.job_id, con_engine)
-
+	#Assign result set to a data frame
     #5. Write the results to a csv or tabular format file
+	with tdclient.Client(apikey) as client:
+		try:
+			job = client.query(parameters['db_name'],compose_query,type=parameters['query_engine'])
+			job.wait()
+			df = td.read_td_job(job.job_id, con_engine)
+		except (RuntimeError, TypeError, NameError):
+			for row in job.result():
+				print(row)
+	
     if parameters['format'] == 'csv':
         print("Downloading results to " + job.job_id + ".csv" + " file")
         df.to_csv(job.job_id + ".csv")
@@ -73,11 +77,15 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv,"f:e:c:m:M:l:d:t:",["format=","engine=","columns=","min_time=","max_time=","limit=","db_name=","table_name="])
 	except getopt.GetoptError:
-		print('query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name')
+		print("Database Name and Table Name are mandatory")
+		print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
+		print("Suggested usage with optionals: ./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
-			print('query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name')
+			print("Database Name and Table Name are mandatory")
+			print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
+			print("Suggested usage with optionals: ./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 			sys.exit()
 		elif opt in ("-f", "--format"):
 			format = arg
@@ -94,13 +102,19 @@ def main(argv):
 		elif opt in ("-d", "--db_name"):
 			db_name = arg
 		elif opt in ("-t", "--table_name"):
-			table_name = arg
+			table_name = str(arg).strip()
 			
 	parameters = {}
-	if db_name == None and table_name == None:
+	if table_name == None or table_name.strip() == '':
 		print("Database Name and Table Name are mandatory")
 		print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
-		print("Suggested usagewith optionals: query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name")
+		print("Suggested usage with optionals: ./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
+		return		
+		
+	if db_name == None or db_name.strip() == '':
+		print("Database Name and Table Name are mandatory")
+		print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
+		print("Suggested usage with optionals: ./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 		return
 		
 	parameters['db_name'] = db_name
@@ -121,34 +135,34 @@ def main(argv):
 		if format.strip() in ["tabular", "csv"]:
 			parameters['format'] = format.strip()
 		else:
-			print("Invalid format option specified. Valid options are tabular or csv")
-			return
+			print("No Valid format option specified. Valid options are tabular or csv. Defaulting to Tabular...")
+			parameters['format'] = 'tabular'
 		
-	if limit == None or limit.strip() == '':
+	if limit == None or limit.strip() == '' or limit.strip() == '0':
 		parameters['limit'] = str('0')
 	else:
 		if is_number(limit):
 			parameters['limit'] = str(limit).strip()
 		else:
 			print("Non numeric value specified for query limit")
-			print("./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d db_name -t table_name")
+			print("./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 			return
 		
-	if min_time == None or min_time.strip() == '':
+	if min_time == None or min_time.strip() == '' or min_time.strip() == 'NULL' or min_time.strip() == 'null':
 		parameters['min_time'] = 'NULL'
 	else:
 		if is_number(min_time):
-			parameters['min_time'] = min_time
+			parameters['min_time'] = min_time.strip()
 		else:
-			print("Non numeric value specified for minimum timestamp. Vaid example is 1412366345")
+			print("Non numeric value specified for minimum timestamp. Vaid examples are 1412366345 and NULL or leave it blank")
 	
-	if max_time == None or max_time.strip() == '':
+	if max_time == None or max_time.strip() == '' or max_time.strip() == 'NULL' or max_time.strip() == 'null':
 		parameters['max_time'] = 'NULL'
 	else:
 		if is_number(max_time):
-			parameters['max_time'] = max_time
+			parameters['max_time'] = max_time.strip()
 		else:
-			print("Non numeric value specified for maximum timestamp. Vaid example is 1412366345")
+			print("Non numeric value specified for maximum timestamp. Vaid examples are 1412366395 and NULL or leave it blank")
 	print(parameters)
 	run_dynamic_query(parameters)
 

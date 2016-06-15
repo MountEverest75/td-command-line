@@ -1,0 +1,149 @@
+Jun 15, 2016 1:49:23 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 1:49:23 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 1:49:23 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 1:49:23 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466023763430 bulk_import session
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist.csv'...
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Bank Name' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'City' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'ST' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'CERT' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Acquiring Institution' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Closing Date' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Updated Date' cannot be used within query strings.
+Jun 15, 2016 1:49:24 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+WARNING: initialize file reader in execute
+com.treasure_data.td_import.prepare.PreparePartsException: Time column not found. --time-column or --time-value option is required
+	at com.treasure_data.td_import.reader.AbstractRecordReader.validateTimeAndPrimaryColumn(AbstractRecordReader.java:194)
+	at com.treasure_data.td_import.reader.CSVRecordReader.sample(CSVRecordReader.java:358)
+	at com.treasure_data.td_import.reader.CSVRecordReader.configure(CSVRecordReader.java:286)
+	at com.treasure_data.td_import.prepare.PrepareProcessor.execute(PrepareProcessor.java:62)
+	at com.treasure_data.td_import.prepare.MultiThreadPrepareProcessor$Worker.run(MultiThreadPrepareProcessor.java:48)
+
+Jun 15, 2016 1:49:29 PM com.treasure_data.td_import.BulkImportCommand main
+SEVERE: Cannot execute your command: null (java.lang.RuntimeException)
+Jun 15, 2016 1:51:07 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 1:51:07 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 1:51:07 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 1:51:07 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466023867542 bulk_import session
+Jun 15, 2016 1:51:08 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 1:51:08 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist.csv'...
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Bank Name' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'City' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'ST' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'CERT' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Acquiring Institution' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Closing Date' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareConfiguration$InvalidColumnsHandling$2 handleInvalidColumn
+WARNING: detected invalid column name: column must contain only lowercase letters, digits, and '_': 'Updated Date' cannot be used within query strings.
+Jun 15, 2016 1:51:09 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+WARNING: initialize file reader in execute
+com.treasure_data.td_import.prepare.PreparePartsException: Time column not found. --time-column or --time-value option is required
+	at com.treasure_data.td_import.reader.AbstractRecordReader.validateTimeAndPrimaryColumn(AbstractRecordReader.java:194)
+	at com.treasure_data.td_import.reader.CSVRecordReader.sample(CSVRecordReader.java:358)
+	at com.treasure_data.td_import.reader.CSVRecordReader.configure(CSVRecordReader.java:286)
+	at com.treasure_data.td_import.prepare.PrepareProcessor.execute(PrepareProcessor.java:62)
+	at com.treasure_data.td_import.prepare.MultiThreadPrepareProcessor$Worker.run(MultiThreadPrepareProcessor.java:48)
+
+Jun 15, 2016 1:51:13 PM com.treasure_data.td_import.BulkImportCommand main
+SEVERE: Cannot execute your command: null (java.lang.RuntimeException)
+Jun 15, 2016 2:15:40 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 2:15:40 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 2:15:40 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 2:15:40 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 bulk_import session
+Jun 15, 2016 2:15:41 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 2:15:41 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv'...
+Jun 15, 2016 2:15:41 PM com.treasure_data.td_import.reader.FixedColumnsRecordReader printSample
+INFO: sample row: {"st":"PA","closing_date":"6-May-16","acquiring_instituition":"First-Citizens Bank & Trust Company","city":"King of Prussia","bank_name":"First CornerStone Bank","cert":35312,"time":0}
+Jun 15, 2016 2:15:42 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converted /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv, result: prepare_task_result{task=prepare_upload_task{file=local-src(path=/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv), session=financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519}, readLines=546, convertedRows=545, invalidRows=0}
+Jun 15, 2016 2:15:42 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploading out/banklist_import_csv_0.msgpack.gz (15882 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 as part banklist_import_csv_0_msgpack_gz
+Jun 15, 2016 2:15:42 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploaded file out/banklist_import_csv_0.msgpack.gz (15882 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 as part banklist_import_csv_0_msgpack_gz (time: 0 sec.)
+Jun 15, 2016 2:15:45 PM com.treasure_data.td_import.upload.UploadProcessor freezeSession
+INFO: Freeze bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+Jun 15, 2016 2:15:46 PM com.treasure_data.td_import.upload.UploadProcessor performSession
+INFO: Perform bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+Jun 15, 2016 2:15:46 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show status of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+  Performing job ID : 70760934
+  Name              : financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+  Status            : performing
+
+Jun 15, 2016 2:15:46 PM com.treasure_data.td_import.upload.UploadProcessor waitPerform
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 bulk import session performing...
+Jun 15, 2016 2:16:38 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show the result of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+  Performing job ID : 70760934
+  Valid parts       : 1
+  Error parts       : 0
+  Valid records     : 545
+  Error records     : 0
+
+Jun 15, 2016 2:16:38 PM com.treasure_data.td_import.upload.UploadProcessor commitSession
+INFO: Commit financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 bulk import session
+Jun 15, 2016 2:16:38 PM com.treasure_data.td_import.upload.UploadProcessor waitCommit
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519 bulk import session committing...
+Jun 15, 2016 2:16:45 PM com.treasure_data.td_import.upload.UploadProcessor deleteSession
+INFO: Delete bulk_import session financial_datasets_fdic_failed_banklist_2016_06_15_1466025340519
+Jun 15, 2016 2:16:45 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Finished 'upload' command

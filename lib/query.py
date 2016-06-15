@@ -83,7 +83,7 @@ def main(argv):
 	max_time   = None
 	limit      = None
 	try:
-		opts, args = getopt.getopt(argv,"f:e:c:m:M:l:d:t:",["format=","engine=","columns=","min_time=","max_time=","limit=","db_name=","table_name="])
+		opts, args = getopt.getopt(argv,"hf:e:c:m:M:l:d:t:",["format=","engine=","columns=","min_time=","max_time=","limit=","db_name=","table_name="])
 	except getopt.GetoptError:
 		print("Database Name and Table Name are mandatory")
 		print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
@@ -125,23 +125,23 @@ def main(argv):
 		print("Suggested usage with optionals: ./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 		return
 
-	parameters['db_name'] = db_name
-	parameters['table_name'] = table_name
-	if engine == None or engine.strip() == '':
+	parameters['db_name'] = db_name.strip().lower()
+	parameters['table_name'] = table_name.strip().lower()
+	if engine == None or engine.strip() == '' or not engine.strip().lower() in ["presto", "hive"]:
 		parameters['query_engine'] = "presto"
 	else:
-		parameters['query_engine'] = engine.strip()
+		parameters['query_engine'] = engine.strip().lower()
 
 	if columns == None or columns.strip() == '' or columns[0] == '-':
 		parameters['col_list'] = "*"
 	else:
-		parameters['col_list'] = columns.strip()
+		parameters['col_list'] = columns.strip().lower()
 
 	if  format == None or format.strip() == '':
 		parameters['format'] = 'tabular'
 	else:
-		if format.strip() in ["tabular", "csv"]:
-			parameters['format'] = format.strip()
+		if format.strip().lower() in ["tabular", "csv"]:
+			parameters['format'] = format.strip().lower()
 		else:
 			print("No Valid format option specified. Valid options are tabular or csv. Defaulting to Tabular...")
 			parameters['format'] = 'tabular'

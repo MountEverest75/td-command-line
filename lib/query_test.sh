@@ -25,3 +25,5 @@
 
 # My own data set tests
 ./query.py -d 'financial_datasets' -t 'fdic_failed_banklist' >> tdaudit.log
+./query.py -d 'weather_datasets' -t 'annual_summary'
+./query.py -f  -e  -c  -m  -M  -l  -d 'weather_datasets' -t 'annual_summary'

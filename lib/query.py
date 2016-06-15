@@ -22,6 +22,12 @@ def run_dynamic_query(parameters):
         limit_str = ";"
 
 	#3. Compose Query String
+    if not 'min_time' in parameters.keys():
+        parameters['min_time'] = 'NULL'
+
+    if not 'max_time' in parameters.keys():
+        parameters['max_time'] = 'NULL'
+
     if parameters['min_time'] == 'NULL' and parameters['max_time'] == 'NULL':
         compose_query = "SELECT " + parameters['col_list']   + " " + \
                         "FROM "   + parameters['table_name'] + " " + limit_str
@@ -77,7 +83,7 @@ def main(argv):
 	max_time   = None
 	limit      = None
 	try:
-		opts, args = getopt.getopt(argv,"hf:e:c:m:M:l:d:t:",["format=","engine=","columns=","min_time=","max_time=","limit=","db_name=","table_name="])
+		opts, args = getopt.getopt(argv,"f:e:c:m:M:l:d:t:",["format=","engine=","columns=","min_time=","max_time=","limit=","db_name=","table_name="])
 	except getopt.GetoptError:
 		print("Database Name and Table Name are mandatory")
 		print("Suggested usage: ./query.py -d <db_name> -t <table_name>")
@@ -126,7 +132,7 @@ def main(argv):
 	else:
 		parameters['query_engine'] = engine.strip()
 
-	if columns == None or columns.strip() == '':
+	if columns == None or columns.strip() == '' or columns[0] == '-':
 		parameters['col_list'] = "*"
 	else:
 		parameters['col_list'] = columns.strip()
@@ -150,7 +156,7 @@ def main(argv):
 			print("./query.py [-f <format(tabular or csv)> -e <engine()> -c <columns separated by commas> -m <min_time> -M <max_time> -l <limit>] -d <db_name> -t <table_name>")
 			return
 
-	if min_time == None or min_time.strip() == '' or min_time.strip() == 'NULL' or min_time.strip() == 'null':
+	if min_time == None or min_time.strip() == '' or min_time.strip() == 'NULL' or min_time.strip() == 'null' or not is_number(min_time):
 		parameters['min_time'] = 'NULL'
 	else:
 		if is_number(min_time):
@@ -158,13 +164,14 @@ def main(argv):
 		else:
 			print("Non numeric value specified for minimum timestamp. Vaid examples are 1412366345 and NULL or leave it blank")
 
-	if max_time == None or max_time.strip() == '' or max_time.strip() == 'NULL' or max_time.strip() == 'null':
+	if max_time == None or max_time.strip() == '' or max_time.strip() == 'NULL' or max_time.strip() == 'null' or not is_number(max_time):
 		parameters['max_time'] = 'NULL'
 	else:
 		if is_number(max_time):
 			parameters['max_time'] = max_time.strip()
 		else:
 			print("Non numeric value specified for maximum timestamp. Vaid examples are 1412366395 and NULL or leave it blank")
+
 	print(parameters)
 	run_dynamic_query(parameters)
 

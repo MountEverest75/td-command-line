@@ -1,0 +1,1 @@
+td import:auto --format csv --column-header --time-column updated_date --time-format "%Y-%m-%d %H:%M:%S" --time-value 1394409600,10 --auto-create financial_datasets.fdic_failed_banklist /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv

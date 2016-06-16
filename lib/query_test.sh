@@ -32,7 +32,7 @@
 # All options
 ./query.py
 ./query.py -d 'financial_datasets' -t 'fdic_failed_banklist'
-./query.py -c "time,bank_name,acquiring_institution" -d 'financial_datasets' -t 'fdic_failed_banklist'
+./query.py -c "time,bank_name,acquiring_instituition" -d 'financial_datasets' -t 'fdic_failed_banklist'
 ./query.py -f  -e  -c  -m  -M  -l  -d 'financial_datasets' -t 'fdic_failed_banklist'
 ./query.py -f-e-c-m-M-l  -d 'financial_datasets' -t 'fdic_failed_banklist'
 ./query.py -f 'csv' -e 'presto' -c '*' -m 'NULL' -M 'NULL' -l '100' -d 'financial_datasets' -t 'fdic_failed_banklist'

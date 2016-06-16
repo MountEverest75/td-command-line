@@ -1,0 +1,209 @@
+Jun 15, 2016 2:53:49 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 2:53:49 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 2:53:49 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 2:53:50 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466027630006 bulk_import session
+Jun 15, 2016 2:53:51 PM com.treasure_data.client.bulkimport.BulkImportClientAdaptorImpl doCreateSession
+SEVERE: Create session failed, response message = Not Found, code = 404
+Jun 15, 2016 2:53:51 PM com.treasure_data.client.bulkimport.BulkImportClientAdaptorImpl doCreateSession
+SEVERE: {"error":"Resource not found","text":"Resource not found","severity":"error"}
+Jun 15, 2016 2:53:51 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+SEVERE: Cannot create bulk_import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027630006: database 'financial_datasets' or table 'fdic_failed_banklist' cannot be found.
+Jun 15, 2016 2:53:51 PM com.treasure_data.td_import.BulkImportCommand doMain
+SEVERE: Cannot execute your command: java.io.IOException: com.treasure_data.model.NotFoundException: Table or database not found, response message = Create session failed, response message = Not Found, detail = {"error":"Resource not found","text":"Resource not found","severity":"error"}, code = 404, code = 404
+java.lang.IllegalArgumentException: java.io.IOException: com.treasure_data.model.NotFoundException: Table or database not found, response message = Create session failed, response message = Not Found, detail = {"error":"Resource not found","text":"Resource not found","severity":"error"}, code = 404, code = 404
+	at com.treasure_data.td_import.BulkImport.createBulkImportSessionName(BulkImport.java:247)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:161)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+Caused by: java.io.IOException: com.treasure_data.model.NotFoundException: Table or database not found, response message = Create session failed, response message = Not Found, detail = {"error":"Resource not found","text":"Resource not found","severity":"error"}, code = 404, code = 404
+	at com.treasure_data.td_import.upload.UploadProcessor.createSession(UploadProcessor.java:535)
+	at com.treasure_data.td_import.BulkImport.createBulkImportSessionName(BulkImport.java:245)
+	... 4 more
+Caused by: com.treasure_data.model.NotFoundException: Table or database not found, response message = Create session failed, response message = Not Found, detail = {"error":"Resource not found","text":"Resource not found","severity":"error"}, code = 404, code = 404
+	at com.treasure_data.client.bulkimport.BulkImportClientAdaptorImpl.createSession(BulkImportClientAdaptorImpl.java:415)
+	at com.treasure_data.client.bulkimport.BulkImportClient.createSession(BulkImportClient.java:118)
+	at com.treasure_data.client.bulkimport.BulkImportClient.createSession(BulkImportClient.java:112)
+	at com.treasure_data.td_import.upload.UploadProcessor.createSession(UploadProcessor.java:528)
+	... 5 more
+
+Jun 15, 2016 2:56:07 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 2:56:07 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 2:56:07 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 2:56:07 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 bulk_import session
+Jun 15, 2016 2:56:09 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 2:56:09 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv'...
+Jun 15, 2016 2:56:09 PM com.treasure_data.td_import.reader.FixedColumnsRecordReader printSample
+INFO: sample row: {"st":"PA","closing_date":"6-May-16","acquiring_instituition":"First-Citizens Bank & Trust Company","city":"King of Prussia","bank_name":"First CornerStone Bank","cert":35312,"time":0}
+Jun 15, 2016 2:56:09 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converted /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv, result: prepare_task_result{task=prepare_upload_task{file=local-src(path=/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv), session=financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765}, readLines=546, convertedRows=545, invalidRows=0}
+Jun 15, 2016 2:56:09 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploading out/banklist_import_csv_0.msgpack.gz (15882 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 as part banklist_import_csv_0_msgpack_gz
+Jun 15, 2016 2:56:10 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploaded file out/banklist_import_csv_0.msgpack.gz (15882 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 as part banklist_import_csv_0_msgpack_gz (time: 0 sec.)
+Jun 15, 2016 2:56:14 PM com.treasure_data.td_import.upload.UploadProcessor freezeSession
+INFO: Freeze bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+Jun 15, 2016 2:56:14 PM com.treasure_data.td_import.upload.UploadProcessor performSession
+INFO: Perform bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+Jun 15, 2016 2:56:15 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show status of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+  Performing job ID : 70764627
+  Name              : financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+  Status            : performing
+
+Jun 15, 2016 2:56:15 PM com.treasure_data.td_import.upload.UploadProcessor waitPerform
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 bulk import session performing...
+Jun 15, 2016 2:57:10 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show the result of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+  Performing job ID : 70764627
+  Valid parts       : 1
+  Error parts       : 0
+  Valid records     : 545
+  Error records     : 0
+
+Jun 15, 2016 2:57:10 PM com.treasure_data.td_import.upload.UploadProcessor commitSession
+INFO: Commit financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 bulk import session
+Jun 15, 2016 2:57:10 PM com.treasure_data.td_import.upload.UploadProcessor waitCommit
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765 bulk import session committing...
+Jun 15, 2016 2:57:17 PM com.treasure_data.td_import.upload.UploadProcessor deleteSession
+INFO: Delete bulk_import session financial_datasets_fdic_failed_banklist_2016_06_15_1466027767765
+Jun 15, 2016 2:57:17 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Finished 'upload' command
+Jun 15, 2016 5:29:20 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 5:29:20 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 5:29:20 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 5:29:20 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466036960528 bulk_import session
+Jun 15, 2016 5:29:21 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 5:29:21 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv'...
+Jun 15, 2016 5:29:21 PM com.treasure_data.td_import.reader.CSVRecordReader initTokenizer
+SEVERE: Cannot create CSV file reader [] local-src(path=/Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv)
+java.io.FileNotFoundException: /Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.treasure_data.td_import.source.LocalFileSource.getInputStream(LocalFileSource.java:105)
+	at com.treasure_data.td_import.prepare.Task.createInputStream(Task.java:49)
+	at com.treasure_data.td_import.reader.CSVRecordReader.initTokenizer(CSVRecordReader.java:316)
+	at com.treasure_data.td_import.reader.CSVRecordReader.configure(CSVRecordReader.java:284)
+	at com.treasure_data.td_import.prepare.PrepareProcessor.execute(PrepareProcessor.java:62)
+	at com.treasure_data.td_import.prepare.MultiThreadPrepareProcessor$Worker.run(MultiThreadPrepareProcessor.java:48)
+
+Jun 15, 2016 5:29:21 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+WARNING: initialize file reader in execute
+com.treasure_data.td_import.prepare.PreparePartsException: java.io.FileNotFoundException: /Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv (No such file or directory)
+	at com.treasure_data.td_import.reader.CSVRecordReader.initTokenizer(CSVRecordReader.java:321)
+	at com.treasure_data.td_import.reader.CSVRecordReader.configure(CSVRecordReader.java:284)
+	at com.treasure_data.td_import.prepare.PrepareProcessor.execute(PrepareProcessor.java:62)
+	at com.treasure_data.td_import.prepare.MultiThreadPrepareProcessor$Worker.run(MultiThreadPrepareProcessor.java:48)
+Caused by: java.io.FileNotFoundException: /Users/rchebolu/Downloads/DataAnalysis/banklist_timestamp.csv (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.treasure_data.td_import.source.LocalFileSource.getInputStream(LocalFileSource.java:105)
+	at com.treasure_data.td_import.prepare.Task.createInputStream(Task.java:49)
+	at com.treasure_data.td_import.reader.CSVRecordReader.initTokenizer(CSVRecordReader.java:316)
+	... 3 more
+
+Jun 15, 2016 5:29:26 PM com.treasure_data.td_import.BulkImportCommand main
+SEVERE: Cannot execute your command: null (java.lang.RuntimeException)
+Jun 15, 2016 5:42:13 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 5:42:13 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 5:42:13 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 5:42:13 PM com.treasure_data.td_import.BulkImportCommand main
+SEVERE: Cannot execute your command: Index: 1, Size: 1 (java.lang.IndexOutOfBoundsException)
+Jun 15, 2016 5:43:25 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-import-java: 0.5.9
+Jun 15, 2016 5:43:25 PM com.treasure_data.td_import.BulkImportCommand doCommand
+INFO: Use td-client-java: 0.5.5
+Jun 15, 2016 5:43:25 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Start 'upload' command
+Jun 15, 2016 5:43:25 PM com.treasure_data.td_import.upload.UploadProcessor createSession
+INFO: Create financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 bulk_import session
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.Import getSources
+WARNING: fallback and create source as LocalFileSource: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+java.lang.RuntimeException: invalid URL: /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv
+	at com.treasure_data.td_import.source.SourceDesc.create(SourceDesc.java:93)
+	at com.treasure_data.td_import.Import.getSources(Import.java:67)
+	at com.treasure_data.td_import.Import.getSources(Import.java:60)
+	at com.treasure_data.td_import.BulkImportCommand.doUploadCommand(BulkImportCommand.java:190)
+	at com.treasure_data.td_import.BulkImportCommand.doCommand(BulkImportCommand.java:88)
+	at com.treasure_data.td_import.BulkImportCommand.doMain(BulkImportCommand.java:61)
+	at com.treasure_data.td_import.BulkImportCommand.main(BulkImportCommand.java:279)
+
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converting '/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv'...
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.reader.FixedColumnsRecordReader printSample
+INFO: sample row: {"st":"PA","closing_date":"6-May-16","acquiring_instituition":"First-Citizens Bank & Trust Company","city":"King of Prussia","bank_name":"First CornerStone Bank","cert":35312,"time":1394409600}
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.prepare.PrepareProcessor execute
+INFO: Converted /Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv, result: prepare_task_result{task=prepare_upload_task{file=local-src(path=/Users/rchebolu/Downloads/DataAnalysis/banklist_import.csv), session=financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777}, readLines=546, convertedRows=545, invalidRows=0}
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploading out/banklist_import_csv_0.msgpack.gz (18487 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 as part banklist_import_csv_0_msgpack_gz
+Jun 15, 2016 5:43:27 PM com.treasure_data.td_import.upload.UploadProcessor execute
+INFO: Uploaded file out/banklist_import_csv_0.msgpack.gz (18487 bytes) to session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 as part banklist_import_csv_0_msgpack_gz (time: 0 sec.)
+Jun 15, 2016 5:43:32 PM com.treasure_data.td_import.upload.UploadProcessor freezeSession
+INFO: Freeze bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+Jun 15, 2016 5:43:32 PM com.treasure_data.td_import.upload.UploadProcessor performSession
+INFO: Perform bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+Jun 15, 2016 5:43:33 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show status of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+  Performing job ID : 70785527
+  Name              : financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+  Status            : performing
+
+Jun 15, 2016 5:43:33 PM com.treasure_data.td_import.upload.UploadProcessor waitPerform
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 bulk import session performing...
+Jun 15, 2016 5:44:05 PM com.treasure_data.td_import.upload.UploadProcessor processAfterUploading
+INFO: Show the result of bulk import session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+  Performing job ID : 70785527
+  Valid parts       : 1
+  Error parts       : 0
+  Valid records     : 545
+  Error records     : 0
+
+Jun 15, 2016 5:44:05 PM com.treasure_data.td_import.upload.UploadProcessor commitSession
+INFO: Commit financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 bulk import session
+Jun 15, 2016 5:44:06 PM com.treasure_data.td_import.upload.UploadProcessor waitCommit
+INFO: Wait financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777 bulk import session committing...
+Jun 15, 2016 5:44:12 PM com.treasure_data.td_import.upload.UploadProcessor deleteSession
+INFO: Delete bulk_import session financial_datasets_fdic_failed_banklist_2016_06_15_1466037805777
+Jun 15, 2016 5:44:12 PM com.treasure_data.td_import.BulkImportCommand doUploadCommand
+INFO: Finished 'upload' command

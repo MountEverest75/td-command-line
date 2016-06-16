@@ -59,4 +59,4 @@ td import:auto --format csv --column-header --time-column updated_date --time-fo
 ./query.py -d 'financial_datasets' -t 'fdic_failed_banklist'
 ```
 
-Please refer to query_test.sh for all samples and combinations.
+(3) Please refer to query_test.sh for all samples and combinations.

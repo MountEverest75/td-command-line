@@ -544,3 +544,4 @@
 "First Alliance Bank & Trust Co.","Manchester","NH","34264","Southern New Hampshire Bank & Trust","1045526400"
 "National State Bank of Metropolis","Metropolis","IL","3815","Banterra Bank of Marion","1111017600"
 "Bank of Honolulu","Honolulu","HI","21029","Bank of the Orient","1111017600"
+"bank_name","city","st","cert","acquiring_instituition","closing_date","time"
